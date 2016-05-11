@@ -12,11 +12,13 @@ find dest/ -type f ! -name '*index.html' -name '*.html' \
 	awk '{
 		if ( match($0, /<article>/, arr) ) {
 			print $0arr[1]
+			print "<header>"
 			print "<div id=gitlink>"
 			print "you can edit this file and contribute here:"
 			print "<br>"
 			print "<a href=\"'${gitlink_text}'\" target=\"_blank\">'${gitlink_text}'</a>"
 			print "</div>"
+			print "</header>"
 		}
 		else {
 			print;
