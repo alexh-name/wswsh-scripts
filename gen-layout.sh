@@ -1,4 +1,4 @@
-#!/bin/mksh
+#!/usr/bin/env mksh
 
 list="\
 $(find src/ -type f -name '*.txt' -o -name '*.wshtml' \

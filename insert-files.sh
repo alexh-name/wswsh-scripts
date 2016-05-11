@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env mksh
 
 cp $(find src/ -maxdepth 1 -type f) dest/
 cp -r src/files/* dest/files/

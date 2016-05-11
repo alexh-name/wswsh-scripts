@@ -1,4 +1,4 @@
-#!/bin/mksh
+#!/usr/bin/env mksh
 source ./wswsh.conf
 
 find dest/ -type f ! -name '*index.html' -name '*.html' \

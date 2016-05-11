@@ -1,4 +1,4 @@
-#!/bin/mksh
+#!/usr/bin/env mksh
 
 find src/*/ -type f -name index.txt -o -name index.wshtml \
 | while read index ; do
